@@ -393,4 +393,9 @@ const static NSTimeInterval             kStackMenuDefaultCloseAnimationDurationO
     }
 }
 
+- (void)setTitle:(NSString *)title {
+    _title = title;
+    if (_label) _label.text = title;
+}
+
 @end
